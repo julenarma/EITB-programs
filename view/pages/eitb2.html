@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--Etiquetas meta necesarias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <!--Logo y titulo del club en la pestaña-->
+   
+    <title>Eitb2</title>
+ 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+   
+    <!--Nuestro css-->
+    
+       
+    <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://kit.fontawesome.com/4ef80493b3.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+
+<body>
+    
+    <div class="sticky">
+
+    <div class="logo">
+        <img src="https://images14.eitb.eus/multimedia/recursos/img/logo_eitbeus_cabecera3.png"  alt="Logotipo EITB">
+    </div>
+         <div class="col-lg-2 col-md-4 col-sm-5 m-3" id="insertSelect">
+            <label for="categorias">Kategoria:</label>
+            <select class="custom-select"id="selectEquipos">
+        
+            </select>
+        </div> 
+        
+        <p class="data">Data:</p>
+        <input id="date" type="date" class="form-control"  required> 
+       
+
+         <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/ETB2_Spain.svg/1200px-ETB2_Spain.svg.png" width="56px" height="28px" alt="Logotipo EITB">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="../pages/eitb1.html"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/ETB1_Spain.svg/1200px-ETB1_Spain.svg.png" width="56px" height="28px" alt="Logotipo EITB"> </a>
+              <a class="dropdown-item" href="../pages/eitbbasque.html"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Eitb_Basque_logo_trans_2021.png" width="90px" height="35px" alt="Logotipo EITB"></a>
+            </div>
+          </div>
+
+
+
+
+        <li class='caja' id='zuzenean_boton'>&nbsp; &nbsp; &nbsp;Ikusi zuzenean</li>
+        <i class="fas fa-search" id='btnBuscarUsuario'></i>&nbsp;&nbsp;
+        
+                <div id="divFiltro">
+                    <a href="#" class="cerrarfiltro" onclick="cerrarFiltro()">&times;</a>
+
+                    <input type="text" id="filtro" class='form-control' placeholder="Bilatu programa" >
+
+                </div> 
+                <button type="button" class="btn btn-lg" id="nightMode"><i></i></button>  
+     <hr>
+    </div>
+
+
+ <!--Video en directo-->
+ <div class="row justify-content-center" id="videos">
+    <div id="videodirecto"></div>
+</div>
+<!--Video fin en directo-->
+
+ 
+    <div class="album">
+        <div class="container">
+             
+            <div class="row justify-content-center" id="noticias" >
+                <!-- Insertar las  noticias desde JS -->
+            </div>
+             
+        
+
+           <div class="row justify-content-center" id="noticia">
+            <!-- Insertar las  noticias desde JS -->
+
+         </div>
+        </div>
+    </div>
+    <!--Final de noticias-->
+
+
+    <button  class="go-top"><i class="fas fa-arrow-up fa-2x"></i></button>
+    <footer></footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
+  
+    <!-- Nuestro JavaScript -->
+    <script src="../js/jsEitb2.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+      
+    <script type = "text/JavaScript" src = "https://MomentJS.com/downloads/moment.js"></script>
+
+</html>
+
